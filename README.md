@@ -1,2 +1,2 @@
 # Portfolio #
-Portfolio from school project
+Portfolio for school project
