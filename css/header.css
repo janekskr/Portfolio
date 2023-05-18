@@ -3,13 +3,14 @@ header {
     background: #29a6dc;
     position: relative;
     color: white;
+    text-transform: uppercase;
 }
 
 header .welcome {
     position: absolute;
     left: 7%;
     z-index: 20;
-    top: 25%;
+    top: 17%;
 }
 
 header .main-title {
@@ -17,23 +18,19 @@ header .main-title {
 }
 
 header .title {
-    font-size: 60px;
+    font-size: 50px;
     text-align: left;
 }
 
 header img {
-    width: 50%;
     position: absolute;
     right: 0;
     bottom: 0;
-    max-height: 100vh;
+    height: 100vh;
 }
 
 header button {
-    background: transparent;
-    border: 1px solid white;
     padding: 20px 70px;
-    font-size: 24px;
     color: white;
     margin-top: 20px;
 }
@@ -46,25 +43,20 @@ header button:hover {
 @media screen and (max-width: 1000px) {
     header .welcome {
         margin: 0 auto;
-        top: 10%;
+        top: 5%;
         width: 80%;
         text-align: center;
     }
-    header .subtitle {
-        font-size: 45px;
+    header .title {
+        font-size: 40px;
+        text-align: center;
     }
 
-    header .title {
+    header .main-title {
         font-size: 70px;
     }
 
     header img {
         width: 100%;
-        top: 30%;
-        max-height: 70%;
     }
 }
-
-@media screen and (max-width: 550px) {
-}
-

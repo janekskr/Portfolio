@@ -1,0 +1,69 @@
+.hobbys {
+    padding: 5vh 0 0;   
+}
+
+.hobbys .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hobbys .grid-container .grid-item {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.hobbys .grid-container .grid-item::after {
+    content: '';
+    position: absolute;
+    display: grid;
+    place-items: center;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    font-size: 60px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    z-index: -10;
+    font-weight: 700;
+}
+
+.hobbys .grid-container .coding::after {
+    content: 'programować';
+}
+
+.hobbys .grid-container .sleeping::after {
+    content: 'spanie';
+}
+
+.hobbys .grid-container .music::after {
+    content: 'słuchać cartiego';
+}
+
+.hobbys .grid-container .sport::after {
+    content: 'sport';
+}
+
+.hobbys .grid-container .grid-item:hover::after {
+    z-index: 2;
+}
+
+.hobbys .grid-container .grid-item img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.hobbys .grid-container .grid-item:hover img {
+    transform: scale(1.2);
+    filter: blur(10px);
+}
+
+@media screen and (max-width: 1000px) {
+    .hobbys .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+

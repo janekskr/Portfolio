@@ -1,6 +1,7 @@
 .projects {
     background: #1e1e1e;
     color: #fff;
+    padding: 5vh 0 7vh 0;   
 }
 
 .projects .flex-container {
@@ -12,15 +13,63 @@
 }
 
 .projects .flex-container> * {
-    flex: 1;
     width: 50%;
     background: #fff;
 }
 
-.projects .flex-container .flex-item {
+.projects .flex-container:nth-child(even) .flex-item {
     background: #ff4f2c;
+    padding: 30px 50px 0 0
 }
 
-.projects .flex-container:nth-child(odd)  .flex-item{
-    background: #0170ba
+.projects .flex-container:nth-child(odd) .flex-item{
+    background: #0170ba;
+    padding: 30px 0 0 50px;
+}
+
+.projects .flex-container .flex-item .title {
+    font-size: 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    text-align: left;
+}
+
+.projects .flex-container:nth-child(even) .flex-item .title {
+    padding-left: 50px;
+}
+.projects .flex-container .flex-item p {
+    font-size: 24px;
+}
+
+.projects .flex-container:nth-child(even) .flex-item p {
+    margin-left: 50px;
+}
+
+.projects .flex-container:nth-child(odd) .flex-item p {
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .projects .flex-container> * {
+        width: 100%;
+    }
+
+    .projects .flex-container {
+        margin: 50px 0;
+        flex-direction: column !important;
+    }
+
+    .projects .flex-container .flex-item .title {
+        padding: 20px 0 !important; 
+        text-align: center !important;
+    }
+
+    .projects .flex-container .flex-item p {
+        margin: 0 !important;
+        text-align: center;
+    }
+    
+    .projects .flex-container:nth-child(even) .flex-item, .projects .flex-container:nth-child(odd) .flex-item{
+        padding: 20px 30px;
+    }
 }

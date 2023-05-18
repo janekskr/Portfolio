@@ -8,32 +8,39 @@
 }
 
 body {
-    width: 100vw;
-    min-height: 100vh;
-    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;   
+    overflow-x: hidden;
 }
 
 section {
     min-height: 80vh;
-    padding: 5vh 5vw;
+    padding: 7vh 2vw 10vh 2vw;
 }
 
-.title {
+section .title,
+footer .title {
     font-size: 60px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 7vh;
 }
 
 button {
     outline: none;
     text-transform: uppercase;
     transition: .4s;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
     cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
-    .title {
+
+    section .title,
+    footer .title {
         font-size: 40px;
     }
 }
-

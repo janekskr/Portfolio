@@ -1,0 +1,26 @@
+.mottos {
+    background: url("../img/mountains.webp") center/cover fixed;
+    color: #fff;
+}
+
+.mottos div {
+    margin: 0 auto;
+    text-align: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.mottos div p {
+    font-size: 40px;
+}
+
+.mottos div .author {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 550px) {
+    .mottos div p {
+        font-size: 25px;
+    }
+}
