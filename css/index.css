@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?:wght@300&family=Saira+Condensed:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    min-height: 80vh;
+    padding: 5vh 5vw;
+}
+
+.title {
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button {
+    outline: none;
+    text-transform: uppercase;
+    transition: .4s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .title {
+        font-size: 40px;
+    }
+}
+

@@ -1,0 +1,26 @@
+.projects {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.projects .flex-container {
+    display: flex;
+}
+
+.projects .flex-container:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.projects .flex-container> * {
+    flex: 1;
+    width: 50%;
+    background: #fff;
+}
+
+.projects .flex-container .flex-item {
+    background: #ff4f2c;
+}
+
+.projects .flex-container:nth-child(odd)  .flex-item{
+    background: #0170ba
+}
