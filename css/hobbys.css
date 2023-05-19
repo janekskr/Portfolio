@@ -35,7 +35,7 @@
 }
 
 .hobbys .grid-container .sleeping::after {
-    content: 'spanie';
+    content: 'spać';
 }
 
 .hobbys .grid-container .music::after {
@@ -43,7 +43,7 @@
 }
 
 .hobbys .grid-container .sport::after {
-    content: 'sport';
+    content: 'uprawiać sport';  
 }
 
 .hobbys .grid-container .grid-item:hover::after {

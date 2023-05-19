@@ -80,7 +80,7 @@ footer .copyright {
     background: #29a9df;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     footer .container {
         grid-template-columns: 1fr;
         gap: 70px;
@@ -95,5 +95,39 @@ footer .copyright {
 
     footer .container .contact > * {
         width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer .container .contact > * {
+        width: 85%;
+    }
+    footer .container .inputs > * {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 450px)  {
+    footer .container {
+        gap: 30px;
+    }
+
+    footer .container .inputs {
+        gap: 20px
+    }
+
+    footer .container .contact div {
+        gap: 15px
+    }
+    footer .container .contact a {
+        height: 45px;
+    }
+    footer .container .contact p {
+        font-size: 20px;
+    }
+
+    footer .container .inputs > * {
+        font-size: 17px;
+        padding: 10px;
     }
 }
