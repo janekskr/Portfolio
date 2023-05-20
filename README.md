@@ -1,2 +1,2 @@
 # Portfolio #
-Portfolio for school project
+Portfolio for school project build with plain css and html
